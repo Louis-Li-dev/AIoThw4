@@ -1,10 +1,11 @@
 import streamlit as st
 import os
 import shutil
-from langchain_community.document_loaders import TextLoader, PyPDFLoader
+
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
+
 
 # --- 設定頁面 ---
 st.set_page_config(page_title="RAG 知識庫系統 (含分數顯示)", layout="wide", page_icon="🔢")
