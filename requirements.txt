@@ -6,6 +6,6 @@ langchain-text-splitters==1.0.0
 langchain-huggingface==0.3.1
 sentence-transformers==3.1.1
 faiss-cpu==1.10.0
-torch==2.2.0
-numpy<2.0
-
+# Python 3.13 compatible pins
+torch==2.5.1
+numpy>=2.0
