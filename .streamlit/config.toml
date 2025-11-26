@@ -1,0 +1,2 @@
+# Disable file watcher to avoid PyTorch-related inspection errors
+server.fileWatcherType = "none"
