@@ -2,10 +2,13 @@ streamlit==1.44.1
 
 langchain==0.2.14
 langchain-community==0.2.14
-langchain-text-splitters==1.0.0
+# must be <0.3.0 to match langchain 0.2.14
+langchain-text-splitters==0.2.2
 langchain-huggingface==0.3.1
+
 sentence-transformers==3.1.1
 faiss-cpu==1.10.0
-# Python 3.13 compatible pins
+
+# You’re on Python 3.11 per the log; these are compatible:
 torch==2.5.1
 numpy>=2.0
