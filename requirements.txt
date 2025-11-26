@@ -1,18 +1,17 @@
 streamlit==1.44.1
 
-# --- LangChain family (aligned pins) ---
+# LangChain family (0.2.x line, aligned)
 langchain==0.2.16
 langchain-community==0.2.16
-# langchain 0.2.x expects text-splitters <0.3.0
 langchain-text-splitters==0.2.2
-langchain-huggingface==0.3.1
+langchain-huggingface==0.1.1
 
 sentence-transformers==3.1.1
 faiss-cpu==1.10.0
 
-# --- PyTorch ---
+# PyTorch
 torch==2.5.1
 
-# --- NumPy: match LangChain constraints on Py<3.12 ---
+# NumPy: keep 1.x for Python < 3.12
 numpy<2.0 ; python_version < "3.12"
 numpy>=2.0 ; python_version >= "3.12"
